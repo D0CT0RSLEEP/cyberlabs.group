@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberLabs · Training Floor</title>
+  <meta name="description" content="CyberLabs defensive training. Simulated. Defend only." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="brand">
+      <span class="mark">▣</span>
+      <div>
+        <div class="title">CYBERLABS</div>
+        <div class="sub">Training Division · Simulated</div>
+      </div>
+    </div>
+    <div class="pills">
+      <span class="pill">DEFEND ONLY</span>
+      <span class="pill dim" id="fps">—</span>
+    </div>
+  </header>
+
+  <main class="hero" id="ops">
+    <p class="eyebrow">Ops floor · Live</p>
+    <h1>This is the floor.<br/>Defensive drills for teams who can’t afford to guess.</h1>
+    <p class="lede">
+      Investigate alerts. Contain risk. Document the shift.
+      No exploitation. No flags. Just judgment under pressure.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#ops" id="enter">Enter ops floor</a>
+      <button type="button" class="btn ghost" id="glitch">Pulse grid</button>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>Move to look · scroll to zoom</span>
+    <span class="dim">Fiction for training. Northglass Logistics is not real.</span>
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
