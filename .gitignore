@@ -1,0 +1,5 @@
+# Guard: the public lab/ copy must never include MOD-HEAVY answer keys or dev tooling.
+# (Mirrors how Missions One/Two were published: these live only in the MOD-HEAVY source repo.)
+lab/docs/MISSION_*.md
+lab/tools/
+lab/README.md
